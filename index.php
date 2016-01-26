@@ -1224,7 +1224,7 @@ div.breadcrumbs a{
 
 #login {
 	max-width:280px;
-	text-align:right;
+	text-align:left;
 	margin:15px auto 50px auto;
 }
 
@@ -1236,7 +1236,7 @@ div.breadcrumbs a{
 
 #login label{
 	width: 120px;
-	text-align: right;
+	text-align: left;
 }
 
 /* Mobile interface */
@@ -2889,12 +2889,12 @@ class EncodeExplorer
 			{
 			?>
 			<div><label for="user_name"><?php print $this->getString("username"); ?>:</label>
-			<input type="text" name="user_name" value="" id="user_name" /></div>
+			<input type="text" name="user_name" value="" id="user_name" maxlength="40" size="40"/></div>
 			<?php
 			}
 			?>
 			<div><label for="user_pass"><?php print $this->getString("password"); ?>:</label>
-			<input type="password" name="user_pass" id="user_pass" /></div>
+			<input type="password" name="user_pass" id="user_pass" maxlength="40" size="40"/></div>
 			<div><input type="submit" value="<?php print $this->getString("log_in"); ?>" class="button" /></div>
 		</form>
 		</div>
